@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: black;
+    color: #fff; */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.main{
+    text-align: center;
+}
+.btn{
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    border: 3px solid black;
+    display: inline-block;
+    cursor: pointer;
+
+}
+#black{
+    background: black;
+    color: white;
+}
+#white{
+    background: white;
+    color: black;
+}
+#grey{
+    background: grey;
+    color: white;
+}
+#blue{
+    background: rgb(55, 55, 131);
+    color: white;
+}
+#yellow{
+    background: yellow;
+    color: rgb(12, 11, 11);
+}
