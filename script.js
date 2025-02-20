@@ -2,20 +2,24 @@ const buttons=document.querySelectorAll('.btn');
 const body=document.querySelector('body');
 buttons.forEach((butn)=>{
     butn.addEventListener('click',(ele)=>{
-        if(ele.target.id==='black'){
-            body.style.backgroundColor=ele.target.id
+        let colorSelect=ele.target.id;
+        if(colorSelect==='grey'){
+            body.style.backgroundColor=colorSelect
         }
-        if(ele.target.id==='grey'){
-            body.style.backgroundColor=ele.target.id
+        if(colorSelect==='yellow'){
+            body.style.backgroundColor=colorSelect
         }
-        if(ele.target.id==='yellow'){
-            body.style.backgroundColor=ele.target.id
+        if(colorSelect==='white'){
+            body.style.backgroundColor=colorSelect
         }
-        if(ele.target.id==='white'){
-            body.style.backgroundColor=ele.target.id
+        if(colorSelect==='darkblue' ||colorSelect==='black' ){
+            body.style.backgroundColor=colorSelect
+            body.style.color = 'white';
+        } else {
+            body.style.color = 'black';
         }
-        if(ele.target.id==='blue'){
-            body.style.backgroundColor=ele.target.id
+        if(colorSelect==='peachpuff'){
+            body.style.backgroundColor=colorSelect
         }
     })
 })
